@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Customer Detalis
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- FontAwesome - Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <section class="wrap_container">
+        <div class="container text-info ">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h1 class="float-left">Customer <span>Details</span></h1>
+                    <form class="form-inline my-2 my-lg-0 float-right mobile_hide">
+                        <i class="fa fa-search"></i><input class="form-control mr-sm-2 pl-4" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <table class="list table table-bordered table-hover table-striped table-light table-responsive-sm" id="employeeList">
+                        <thead class="bg-info text-white ">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name <i class="fa fa-sort"></i></th>
+                                <th scope="col">Address</th>
+                                <th scope="col">City <i class="fa fa-sort"></i></th>
+                                <th scope="col">Pin Code</th>
+                                <th scope="col">Country <i class="fa fa-sort"></i></th>
+                                <th scope="col">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <form class="form-wrapper" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div class="row mt-4">
+                    <div class="col-sm-6">
+                        <div class="row mb-2">
+                            <div class="col-sm-12 col-md-6">
+                                <label class="validation-error hide" id="fullNameValidationError">This
+                                field
+                                is required.</label>
+                                <input type="text" name="fullName" id="fullName" placeholder="Name">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+
+                                <input type="text" name="address" id="address" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-12 col-md-6">
+
+                                <input type="text" name="city" id="city" placeholder="City">
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+
+                                <input type="text" name="pcode" id="pcode" placeholder="pcode">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+
+                                <input type="text" name="country" id="country" placeholder="Country">
+                            </div>
+                        </div>
+                        <div class="form-action-buttons">
+                            <input id="submit" class="btn-info" type="submit" value="Submit">
+                            <input id="save" class="btn-info" type="submit" value="Save">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
